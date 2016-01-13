@@ -1,0 +1,24 @@
+div{
+	display: inline;
+}
+
+div img{
+	border-radius: 15px;
+	margin: 5px 5px;
+}
+
+h1{
+	border-radius: 15px;
+	color: #0BA49F;
+}
+.galeria{
+	position: absolute;
+	width:58%;
+	margin-left:21%;
+	margin-right:21%;
+	
+	border:5px solid #808080;
+	border-radius: 15px;
+	padding:5px;
+	
+}
