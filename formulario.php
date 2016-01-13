@@ -19,7 +19,7 @@
 					<div class="col s2 offset-s5">
 							<div class="file-field input-field">
 								<i class="material-icons prefix">perm_media</i>
-								<input name="uploadedfile" type="file" required>
+								<input name="uploadedfile" type="file" required class="tooltipped" data-position="left" data-delay="50" data-tooltip="Click! para selecionar una foto :) ">
 								<div class="file-path-wrapper">
 									<input class="file-path validate" type="text" value="                       Click!" >
 								</div>
@@ -32,6 +32,7 @@
 				
 			</div>
 		</div>
+		
 		<div class="galeria">
 			<!--Este codigo php recorre todos los archivos que tenemos dentro de la carpeta upload y las muestra-->
 				<?php
@@ -39,14 +40,14 @@
 					function listar_directorio($ruta){ 
 					   // abrir un directorio y listarlo recursivo 
 					   if (is_dir($ruta)) { 
-						  if ($dh = opendir($ruta)) { 
-							 while (($file = readdir($dh)) !== false) { 
-								if (!is_dir($ruta . $file) ){ 
-									echo "<img class='materialboxed' src= 'uploads/$file' width='100' height='100'>";
+							if ($dh = opendir($ruta)) { 
+								while (($file = readdir($dh)) !== false) { 
+									if (!is_dir($ruta . $file) ){ 
+										echo "<img class='materialboxed' src= 'uploads/$file' width='100' height='100'>";
+									} 
 								} 
-							 } 
-							closedir($dh); 
-						  } 
+								closedir($dh); 
+							} 
 						}else   echo "<br>No es ruta valida"; 
 					}
 				?>
@@ -58,6 +59,7 @@
 		<script>
 			$(document).ready(function(){
 				$('.materialboxed').materialbox();
+				$('.tooltipped').tooltip({delay: 50});
 			  });
 		</script>
 	</body>
