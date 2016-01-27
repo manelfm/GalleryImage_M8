@@ -33,19 +33,33 @@
 			</div>
 		</div>
 		
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<button id="boton_1">Anterior</button>
+					<img id="imgDiapo" src="" name="diapositiva" />
+					<button id="boton_2">Siguiente</button>
+				</div>
+			</div>
+			
+		</div>
+		
 		<div class="galeria">
 			<!--Este codigo php recorre todos los archivos que tenemos dentro de la carpeta upload y las muestra-->
 				<?php
 					listar_directorio("uploads/");
+					$imagenes = array();
 					function listar_directorio($ruta){ 
 					   // abrir un directorio y listarlo recursivo 
 					   if (is_dir($ruta)) { 
 							if ($dh = opendir($ruta)) { 
 								while (($file = readdir($dh)) !== false) { 
 									if (!is_dir($ruta . $file) ){ 
+										$imagenes[] = $ruta . $file;
 										echo "<img class='materialboxed' src= 'uploads/$file' width='100' height='100'>";
+										
 									} 
-								} 
+								}
 								closedir($dh); 
 							} 
 						}else   echo "<br>No es ruta valida"; 
@@ -62,6 +76,7 @@
 				$('.tooltipped').tooltip({delay: 50});
 			  });
 		</script>
+		<script type="text/javascript" src="gallery.js"></script>
 	</body>
 </html>
 
