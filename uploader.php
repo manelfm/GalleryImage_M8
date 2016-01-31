@@ -16,6 +16,15 @@
 				<?php 
 					/*Indica la ruta de la carpeta contenedor, en este caso se llamara uploads*/
 					$target_path = "uploads/";
+					$target_file = $target_path . basename($_FILES["uploadedfile"]["name"]);
+					$imageFileType=pathinfo($target_file,PATHINFO_EXTENSION);
+					if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+					&& $imageFileType != "gif" ) {
+					echo "<p style= 'color: red;text-align: center; font-size:30px'>Lo sentimos, debe de introducir archivos JPG, JPEG, PNG y GIF<p>.";
+					echo '<a  href="formulario.php"><button id="volver"class="btn" type="button">Volver</button></a>';
+					return;
+					} 
+					
 					$target_path = $target_path . basename( $_FILES['uploadedfile']['name']); 
 					/*move_upload_file mueve un archivo, lo pasas con las variables , lo comprueba y lo sube sino da error. */
 					if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
