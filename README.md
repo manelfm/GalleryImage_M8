@@ -15,6 +15,10 @@ El usuario visualizará las imágenes en un carrousel, además de visualizar ind
 .--- mystyle.css: archivo que define el estilo y la apariencia de la aplicación.
 .--- uploader.php: conecta con el almacén comprobando los formatos de las fotos y los errores y realiza la subida de imágenes.
 
-##Nota importante
+##Nota Importante
 
 El usuario no podrá eliminar imágenes desde la aplicación, solo podrá eliminarlas dirigiéndose a la carpeta /uploads y eliminándolas manualmente.
+
+##Nota Instalación
+
+Una vez descargue el proyecto deberá de dar permisos a la carpeta /uploads, que se encuentra dentro de la carpeta de la aplicación, para que se permitan subir archivos. 

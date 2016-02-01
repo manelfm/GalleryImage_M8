@@ -3,7 +3,7 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
-		<title>Bisbal</title>
+		<title>Subida de imágenes</title>
 	</head>
 	<!--
 	enctype="multipart/form-data": es necesario para subir archivos, crea la forma que permite explorar en su búsqueda en el equipo local.
