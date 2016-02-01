@@ -1,15 +1,20 @@
 # GalleryImage_M8
 
-GOAL OF THE SOFTWARE
+##Proyecto Galería de Imágenes
 
-The goal of our software is to bring an application that is able to read images
-in a directory and show them to the user, also making able that user can upload their
-own images and see them on our image gallery application.
+El proyecto que hemos creado es a una galería de imágenes. 
+En esta aplicación se podrá subir todas las imágenes que el usuario desee ( los formatos permitidos para las imágenes son: png, jpg, jpeg y gif ).
+El usuario visualizará las imágenes en un carrousel, además de visualizar individualmente cada imagen en diapositivas clicando en los botones (anterior y siguiente). 
 
-LICENSE
+##Carpetas y archivos
 
-INSTALLATION
+.--- Carpeta /MATERIALIZE: contiene los archivos necesarios para utilizar un framework.
+.--- Carpeta /UPLOADS: será el almacén de imágenes.
+.--- Index.php: iniciará la aplicación mostrando la galería de imágenes.
+.--- gallery.js: incluye las funciones necesarias para la galería de imágenes.
+.--- mystyle.css: archivo que define el estilo y la apariencia de la aplicación.
+.--- uploader.php: conecta con el almacén comprobando los formatos de las fotos y los errores y realiza la subida de imágenes.
 
-CONFIGURATIONS
+##Nota importante
 
-CONTRIBUTIONS
+El usuario no podrá eliminar imágenes desde la aplicación, solo podrá eliminarlas dirigiéndose a la carpeta /UPLOADS y eliminándolas manualmente.
