@@ -1,4 +1,4 @@
-# GalleryImage_M8
+﻿# GalleryImage_M8
 
 ##Proyecto Galería de Imágenes
 
@@ -21,4 +21,9 @@ El usuario no podrá eliminar imágenes desde la aplicación, solo podrá elimin
 
 ##Nota Instalación
 
-Una vez descargue el proyecto deberá de dar permisos a la carpeta /uploads, que se encuentra dentro de la carpeta de la aplicación, para que se permitan subir archivos. 
+Una vez descargue el proyecto deberá de dar permisos al usuario para poder realizar las tareas de la aplicación para que se permitan subir archivos.
+
+Para ello ejecutamos el comando "chown 'usuario':www-data /var/www/html/GalleryImage_M8/uploads".
+==> 'usuario' es el usuario del sistema con que està arrancado el servidor.
+
+De esta forma damos los permisos solo a 'usuario' sobre la carpeta ../uploads.
