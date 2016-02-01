@@ -35,10 +35,14 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col s12">
-					<button id="boton_1">Anterior</button>
-					<img id="imgDiapo" src="" name="diapositiva" />
-					<button id="boton_2">Siguiente</button>
+				<div class="col s3">
+					<button class="btn-large btn-anterior" id="boton_1">Anterior</button>
+				</div>
+				<div class="col s6">
+					<img class="img-diaposi" id="imgDiapo" src="" name="diapositiva" width='100%' height='50%' />
+				</div>
+				<div class="col s3">
+					<button class="btn-large btn-siguiente" id="boton_2">Siguiente</button>
 				</div>
 			</div>
 			

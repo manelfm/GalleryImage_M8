@@ -6,8 +6,13 @@ window.onload = function(){
 	for(var i = 0; i < gallery.length; i++){
 		ruta[i] = gallery[i].src;
 	}
+	
+	//Asigna la primera foto en nuestra galeria por defecto 
+	document.getElementById('imgDiapo').src = ruta[0];
+	
 	//Creamos variables auxiliares para las funciones que implementaremos
 	var aux_2 = 0; 
+	
 	V_max = gallery.length; 
 	V_max = V_max-1; // Diminuye uno su valor dado que V_max coge un valor a más.
 	//Función que permite pasar a la siguiente imagen.
@@ -31,6 +36,7 @@ window.onload = function(){
 		document.getElementById('imgDiapo').src = ruta[aux_2];
 	}
 	//Declaración de los elementos que van a utlizar las funciones
+
 	document.getElementById("boton_1").onclick = anterior;
 	document.getElementById("boton_2").onclick = siguiente;
 }

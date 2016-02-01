@@ -11,11 +11,27 @@ h1{
 	border-radius: 15px;
 	color: #0BA49F;
 }
+.btn-siguiente{
+	position:relative;
+	margin-left: 30px;
+	margin-top: 150px;
+}
+.img-diaposi{
+	
+	position:relative;
+	/*left: 550px;*/
+}
+.btn-anterior{
+	position:relative;
+	margin-left: 160px;
+	margin-top: 150px;
+}
+
 .galeria{
 	position: absolute;
-	width:58%;
-	margin-left:21%;
-	margin-right:21%;
+	width:900px;
+	margin-left:250px;
+	margin-top:20px;
 	
 	border:5px solid #808080;
 	border-radius: 15px;
